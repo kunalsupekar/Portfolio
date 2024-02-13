@@ -668,3 +668,74 @@ img {
 }
 
 
+
+
+/* ===== Projects =====*/
+.projects__container {
+  display: block;
+  
+}
+
+.projects__item {
+  margin-bottom: 2rem;
+  display: flex;
+  
+}
+
+.projects__img {
+  flex: 0 0 40%;
+}
+
+.projects__img img {
+  width: 80%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add shadow */
+ 
+}
+
+.projects__details {
+  flex: 1;
+}
+
+.projects__title {
+  margin-top: 0;
+}
+
+.projects__description {
+  margin-bottom: 1rem;
+}
+
+/* .projects__framework {
+  font-style: italic;
+  margin-bottom: 1rem;
+} */
+
+.projects__btn {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+
+}
+
+.projects__btn:hover {
+  background-color: #0056b3;
+}
+
+.projects__img img {
+  transition: 1s;
+}
+.projects__img img:hover {
+  transform: scale(1.25);
+}
+
+.projects__btn-container {
+  display: flex;
+  gap: 1rem; /* Adjust the spacing between buttons */
+}
+
