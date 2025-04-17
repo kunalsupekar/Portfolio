@@ -739,3 +739,133 @@ img {
   gap: 1rem; /* Adjust the spacing between buttons */
 }
 
+
+
+/* ===== Internships ===== */
+.internships.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.internships__container {
+  row-gap: 2rem;
+}
+
+.internships__item {
+  background-color: var(--white-2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  margin-bottom: var(--mb-4);
+  transition: transform 0.3s ease;
+}
+
+.internships__item:hover {
+  transform: scale(1.02);
+}
+
+.internships__header {
+  margin-bottom: var(--mb-2);
+}
+
+.internships__title {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-2);
+}
+
+.internships__company {
+  font-size: var(--normal-font-size);
+  color: var(--light-gray);
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-2);
+}
+
+.internships__duration {
+  font-size: var(--smaller-font-size);
+  color: var(--vegas-gold);
+  font-weight: var(--font-semi);
+}
+
+.internships__details {
+  margin-bottom: var(--mb-2);
+}
+
+.internships__skills {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: var(--mb-2);
+}
+
+.internships__list {
+  list-style: none;
+  padding: 0;
+}
+
+.internships__list li {
+  font-size: var(--normal-font-size);
+  color: var(--light-gray);
+  margin-bottom: var(--mb-2);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.internships__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--first-color);
+  font-size: 1.2rem;
+}
+
+.internships__links {
+  display: flex;
+  gap: var(--mb-2);
+}
+
+/* Reuse existing button class */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries */
+@media screen and (min-width: 576px) {
+  .internships__container {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2rem;
+      padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .internships__container {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .internships__container {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+.internships__location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  font-size: 14px;
+}
