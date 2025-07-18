@@ -1,113 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Kunal Portfolio</title>
-        <link rel="icon" href="favicon.png" type="image/png">
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Kunal Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Kunal Supekar</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item">
+                        <a href="#resume" class="nav__link">Resume</a>
+                        <a href="assets/Resume/kunal-supekar.pdf" download class="nav__download-link" target="_blank">
+                            <i class="fas fa-eye" style='margin-left: 10px;'></i>
+                            <!-- Assuming you have an icon library -->
+                            <!-- Or you can use text like "Download" -->
+                        </a>
+                    </li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Kunal </span><br> An Enginner</h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/kunal-supekar-6b81b2246/" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                <a href="https://github.com/kunalsupekar" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/kunal.jpg" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">Kunal Supekar</a>
+                    <h2 class="about__subtitle">I'am Kunal</h2>
+                    <p class="about__text">An enthusiastic engineering fresher Who is a self-starter and capable to use
+                        Technical skills for the betterment of The organization.</p>
+
+                    <p class="about__text">A highly motivated and hardworking individual skilled in Java, Spring
+                        Frameworks and MYSQL.</p>
+
+                    <p class="about__text">
+                        A talented Software Engineer aspiring to gain a full-time position in a reputed company.
+
+
+                    </p>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>                    
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>  
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>                      
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item">
-                            <a href="#resume" class="nav__link">Resume</a>
-                            <a href="assets/Resume/Kunal_Resume_Btech.pdf" download class="nav__download-link">
-                                <i class="fas fa-download" style='margin-left: 10px;'></i> <!-- Assuming you have an icon library -->
-                                <!-- Or you can use text like "Download" -->
-                            </a>
-                        </li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Kunal </span><br> An  Enginner</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/kunal-supekar-6b81b2246/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                    <a href="https://github.com/kunalsupekar" target="_blank"  class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/kunal.jpg"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Kunal</h2>
-                        <p class="about__text">An enthusiastic engineering fresher Who is a self-starter and capable to use
-                            Technical skills for the betterment of The organization.</p> 
-                            
-                            <p class="about__text">A highly motivated and hardworking individual skilled in Java, Spring Frameworks and MYSQL.</p>
-
-                            <p class="about__text">
-                                A talented Software Engineer aspiring to gain a full-time position in a reputed company. 
+            </div>
+        </section>
 
 
-                            </p>
-                    </div>                                   
-                </div>
-            </section>
 
 
-           
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills__container container grid section__border">          
-                    <div class="skills__content">
-                        <div class="skills__info">
-                            <!-- <div class="skills__data">
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container container grid section__border">
+                <div class="skills__content">
+                    <div class="skills__info">
+                        <!-- <div class="skills__data">
                                 <div class="skills__blob">
                                     <img src="assets/img/html-1.svg" alt="skills image">
                                 </div>
@@ -119,107 +128,134 @@
                                 </div>
                                 <h3 class="skills__name">CSS</h3>                                                                     
                             </div> -->
-                            <!-- <div class="skills__data">
+                        <!-- <div class="skills__data">
                                 <div class="skills__blob">
                                     <img src="assets/img/javascript-1.svg" alt="skills image">
                                 </div>
                                 <h3 class="skills__name">JavaScript</h3>                                                                     
                             </div> -->
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/java-4 (1).svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">JAVA</h3>                                                                     
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/java-4 (1).svg" alt="skills image">
                             </div>
-                            <!-- <div class="skills__data">
+                            <h3 class="skills__name">JAVA</h3>
+                        </div>
+                        <!-- <div class="skills__data">
                                 <div class="skills__blob">
                                     <img src="assets/img/c-1.svg" alt="skills image">
                                 </div>
                                 <h3 class="skills__name">C Programming</h3>                                                                     
                             </div> -->
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/mysql-logo.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">MYSQL</h3>                                                                     
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/mysql-logo.svg" alt="skills image">
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-spring-boot.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Spring Boot</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/react-2.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Reactjs</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/terraform-enterprise.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Terraform</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/spring-3.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Spring Microservices</h3>                                                                     
-                            </div>
-                              
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/git-icon.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">GIT</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/postman.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Postman</h3>                                                                     
-                            </div>
-                           
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/kubernets.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Kubernetes</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/docker-4.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Docker</h3>                                                                     
-                            </div>
-                            
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/aws-2.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">AWS</h3>                                                                     
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/azure-icon-svgrepo-com.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Azure</h3>                                                                     
-                            </div><div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/grafana-svgrepo-com.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">Grafana</h3>                                                                     
-                            </div>
-                            
+                            <h3 class="skills__name">MYSQL</h3>
                         </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-spring-boot.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Spring Boot</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/react-2.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Reactjs</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/terraform-enterprise.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Terraform</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/spring-3.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Spring Microservices</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">GIT</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/postman.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Postman</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/kubernets.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Kubernetes</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/docker-4.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Docker</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/aws-2.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">AWS</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/azure-icon-svgrepo-com.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Azure</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/grafana-svgrepo-com.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Grafana</h3>
+                        </div>
+
                     </div>
                 </div>
-            </section>
-            
+            </div>
+        </section>
 
-            <!--===== WORK =====-->
-             <!-- <section class="work section" id="work">
+
+
+        <section class="internships section" id="work">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="internships__container bd-grid">
+                <div class="internships__item">
+                    <div class="internships__header">
+                        <h3 class="internships__title">Product Engineer DevOps</h3>
+                        <p class="internships__company">Effigo Global | IT / Computers - Software</p>
+                        <p class="internships__duration">02 June 2025 - Present</p>
+                        <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+                    </div>
+                    <div class="internships__details">
+                        <p class="internships__skills"><strong>Key Skills:</strong> Java Full Stack Development,
+                            ReactJS, Workflow, DevOps</p>
+                        <ul class="internships__list">
+                            <li>Contributed to product development using Java full stack technologies and ReactJS.</li>
+                            <li>Implemented workflows to streamline development processes.</li>
+                            <li>Applied DevOps practices to enhance deployment and operational efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="internships__links">
+                        <a href="https://www.effigoglobal.com/" target="_blank" class="button">Company Website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== WORK =====-->
+        <!-- <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
@@ -243,193 +279,210 @@
                     </a>
                 </div>
             </section> -->
-            <section class="internships section" id="work">
-                <h2 class="section-title">Internships</h2>
-            
-                <div class="internships__container bd-grid">
-                    <!-- Internship Item 1 -->
-                    <div class="internships__item">
-                        <div class="internships__header">
-                            <h3 class="internships__title">Product Engineering Intern</h3>
-                            <p class="internships__company">Effigo Global | IT / Computers - Software</p>
-                            <p class="internships__duration">06 Jan 2025 - Present</p>
-                            <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
-                        </div>
-                        <div class="internships__details">
-                            <p class="internships__skills"><strong>Key Skills:</strong> Java Full Stack Development, ReactJS, Workflow, DevOps</p>
-                            <ul class="internships__list">
-                                <li>Contributed to product development using Java full stack technologies and ReactJS.</li>
-                                <li>Implemented workflows to streamline development processes.</li>
-                                <li>Applied DevOps practices to enhance deployment and operational efficiency.</li>
-                            </ul>
-                        </div>
-                        <div class="internships__links">
-                            <a href="https://www.effigoglobal.com/" target="_blank" class="button">Company Website</a>
-                        </div>
-                    </div>
-            
-                    <!-- Internship Item 2 -->
-                    <div class="internships__item">
-                        <div class="internships__header">
-                            <h3 class="internships__title">Software Engineering Intern</h3>
-                            <p class="internships__company">Allvue Systems | Banking / Financial Services / Investment</p>
-                            <p class="internships__duration">20 Aug 2024 - 20 Nov 2024</p>
-                            <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Pune</p>
+        <section class="internships section" id="work">
+            <h2 class="section-title">Internships</h2>
 
-                        </div>
-                        <div class="internships__details">
-                            <p class="internships__skills"><strong>Key Skills:</strong> Azure DevOps, SQL Server, Azure Cloud, Grafana</p>
-                            <ul class="internships__list">
-                                <li>Designed and implemented automated build and release pipelines in Azure DevOps, utilizing Azure Repos for source control management.</li>
-                                <li>Integrated Static Application Security Testing (SAST) using the Mend tool to ensure secure and compliant code.</li>
-                                <li>Managed deployment infrastructure with Azure Virtual Machine Scale Sets (VMSS) to achieve scalability and high availability.</li>
-                                <li>Monitored pipeline performance and system metrics using Grafana, improving operational visibility and troubleshooting efficiency.</li>
-                            </ul>
-                        </div>
-                        <div class="internships__links">
-                            <a href="https://www.allvuesystems.com/" target="_blank" class="button">Company Website</a>
-                        </div>
+            <div class="internships__container bd-grid">
+                <!-- Internship Item 1 -->
+                <div class="internships__item">
+                    <div class="internships__header">
+                        <h3 class="internships__title">Product Engineering Intern</h3>
+                        <p class="internships__company">Effigo Global | IT / Computers - Software</p>
+                        <p class="internships__duration">06 Jan 2025 - 30 May 2025</p>
+                        <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Hyderabad</p>
                     </div>
-            
-                    <!-- Internship Item 3 -->
-                    <div class="internships__item">
-                        <div class="internships__header">
-                            <h3 class="internships__title">DevOps Engineering Intern</h3>
-                            <p class="internships__company">Hirademy Technologies | IT / Computers - Software</p>
-                            <p class="internships__duration">17 Jun 2024 - 06 Aug 2024</p>
-                            <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Remote</p>
-
-                        </div>
-                        <div class="internships__details">
-                            <p class="internships__skills"><strong>Key Skills:</strong> DevOps, Docker, Automation, AWS</p>
-                            <ul class="internships__list">
-                                <li>Deployed and managed web applications using modern cloud and containerization technologies.</li>
-                                <li>Utilized Docker for containerized application deployment and management.</li>
-                                <li>Implemented automation scripts to streamline deployment processes on AWS.</li>
-                                <li>Collaborated with teams to ensure reliable and scalable infrastructure.</li>
-                            </ul>
-                        </div>
-                        <div class="internships__links">
-                            <a href="https://www.hirademy.com/" target="_blank" class="button">Company Website</a>
-                        </div>
+                    <div class="internships__details">
+                        <p class="internships__skills"><strong>Key Skills:</strong> Java Full Stack Development,
+                            ReactJS, Workflow, DevOps</p>
+                        <ul class="internships__list">
+                            <li>Contributed to product development using Java full stack technologies and ReactJS.</li>
+                            <li>Implemented workflows to streamline development processes.</li>
+                            <li>Applied DevOps practices to enhance deployment and operational efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="internships__links">
+                        <a href="https://www.effigoglobal.com/" target="_blank" class="button">Company Website</a>
                     </div>
                 </div>
-            </section>
-           
 
-            <section class="projects section" id="projects">
-                <h2 class="section-title">Projects</h2>
-                
-                <div class="projects__container bd-grid">
+                <!-- Internship Item 2 -->
+                <div class="internships__item">
+                    <div class="internships__header">
+                        <h3 class="internships__title">Software Engineering Intern</h3>
+                        <p class="internships__company">Allvue Systems | Banking / Financial Services / Investment</p>
+                        <p class="internships__duration">20 Aug 2024 - 20 Nov 2024</p>
+                        <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Pune</p>
 
-                    <div class="projects__item">
-                        <div class="projects__img">
-                            <img src="assets/Projects_img/EmsProject.jpg" alt="EMS-architecture">
+                    </div>
+                    <div class="internships__details">
+                        <p class="internships__skills"><strong>Key Skills:</strong> Azure DevOps, SQL Server, Azure
+                            Cloud, Grafana</p>
+                        <ul class="internships__list">
+                            <li>Designed and implemented automated build and release pipelines in Azure DevOps,
+                                utilizing Azure Repos for source control management.</li>
+                            <li>Integrated Static Application Security Testing (SAST) using the Mend tool to ensure
+                                secure and compliant code.</li>
+                            <li>Managed deployment infrastructure with Azure Virtual Machine Scale Sets (VMSS) to
+                                achieve scalability and high availability.</li>
+                            <li>Monitored pipeline performance and system metrics using Grafana, improving operational
+                                visibility and troubleshooting efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="internships__links">
+                        <a href="https://www.allvuesystems.com/" target="_blank" class="button">Company Website</a>
+                    </div>
+                </div>
+
+                <!-- Internship Item 3 -->
+                <div class="internships__item">
+                    <div class="internships__header">
+                        <h3 class="internships__title">DevOps Engineering Intern</h3>
+                        <p class="internships__company">Hirademy Technologies | IT / Computers - Software</p>
+                        <p class="internships__duration">17 Jun 2024 - 06 Aug 2024</p>
+                        <p class="internships__location"> <i class="fas fa-map-marker-alt"></i> Remote</p>
+
+                    </div>
+                    <div class="internships__details">
+                        <p class="internships__skills"><strong>Key Skills:</strong> DevOps, Docker, Automation, AWS</p>
+                        <ul class="internships__list">
+                            <li>Deployed and managed web applications using modern cloud and containerization
+                                technologies.</li>
+                            <li>Utilized Docker for containerized application deployment and management.</li>
+                            <li>Implemented automation scripts to streamline deployment processes on AWS.</li>
+                            <li>Collaborated with teams to ensure reliable and scalable infrastructure.</li>
+                        </ul>
+                    </div>
+                    <div class="internships__links">
+                        <a href="https://www.hirademy.com/" target="_blank" class="button">Company Website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects__container bd-grid">
+
+                <div class="projects__item">
+                    <div class="projects__img">
+                        <img src="assets/Projects_img/EmsProject.jpg" alt="EMS-architecture">
+                    </div>
+                    <div class="projects__details">
+                        <h3 class="projects__title">Cloud based Smart Employee Portal</h3>
+                        <p class="projects__description">* A next-generation employee management solution that leverages
+                            cloud technology, advanced security measures, and automation to streamline HR and workforce
+                            operations
+                        </p>
+
+
+                        <div class="projects__btn-container">
+                            <a href="http://employee-frontend-bucket-new-kunal.s3-website.ap-south-1.amazonaws.com/"
+                                target="_blank" class="projects__btn">Live Demo</a>
+                            <a href="https://github.com/kunalsupekar/capstone_project" target="_blank"
+                                class="projects__btn">
+                                <i class="fas fa-code"> </i> Source Code</a>
                         </div>
-                        <div class="projects__details">
-                            <h3 class="projects__title">Cloud based Smart Employee Portal</h3>
-                            <p class="projects__description">* A next-generation employee management solution that leverages cloud technology, advanced security measures, and automation to streamline HR and workforce operations
-                            </p>
-                    
-                
-                            <div class="projects__btn-container">
-                                <a href="http://employee-frontend-bucket-new-kunal.s3-website.ap-south-1.amazonaws.com/" target="_blank" class="projects__btn">Live Demo</a>
-                                <a href="https://github.com/kunalsupekar/capstone_project"  target="_blank" class="projects__btn">
-                                    <i class="fas fa-code"> </i> Source Code</a>
-                            </div>
-                            <!-- <p class="projects__framework">Framework : Spring boot ,Docker,ReactJs,AWS cloud</p>
+                        <!-- <p class="projects__framework">Framework : Spring boot ,Docker,ReactJs,AWS cloud</p>
                             <a href="#" onclick="return false;" class="projects__btn">Live Demo</a>
                              -->
-                        </div>
                     </div>
+                </div>
 
-                    <div class="projects__item">
-                        <div class="projects__img">
-                            <img src="assets/Projects_img/Kubernetis_architecture.jpg" alt="kubernetis-architecture">
-                        </div>
-                        <div class="projects__details">
-                            <h3 class="projects__title">Deploying and Managing Web Application using Kubernetes</h3>
-                            <p class="projects__description">* Building an actual physical Kubernetes cluster 
-                                <br>* manage those webapplication using kube-ctl.
-                            </p>
-                    
-                
-                            <p class="projects__framework">Framework : Kubernetes,Docker,Spring Microservices architecture</p>
-                            <a href="#" onclick="return false;" class="projects__btn">Live Demo</a>
-                        </div>
+                <div class="projects__item">
+                    <div class="projects__img">
+                        <img src="assets/Projects_img/Kubernetis_architecture.jpg" alt="kubernetis-architecture">
                     </div>
-                    <div class="projects__item">
-                        <div class="projects__img">
-                            <img src="assets/Projects_img/academicnexa.jpg" alt="">
-                        </div>
-                        <div class="projects__details">
-                            <h3 class="projects__title">Student Portal (Academic Nexa) </h3>
-                            <p class="projects__description">A ERP system for both the teacher and student.Where teacher can manage all the students.</p>
-                            <p class="projects__framewor"> Framework : Spring Microservices,Reactjs,MYSQL Database.
-                              
-                            </p>
-                            <div class="projects__btn-container">
-                            <a href="https://main--academicnexa.netlify.app/studentdashboard"  target="_blank" class="projects__btn">Live Demo</a>
-                            <a href="https://github.com/kunalsupekar/Student-Portal"  target="_blank" class="projects__btn">
+                    <div class="projects__details">
+                        <h3 class="projects__title">Deploying and Managing Web Application using Kubernetes</h3>
+                        <p class="projects__description">* Building an actual physical Kubernetes cluster
+                            <br>* manage those webapplication using kube-ctl.
+                        </p>
+
+
+                        <p class="projects__framework">Framework : Kubernetes,Docker,Spring Microservices architecture
+                        </p>
+                        <a href="#" onclick="return false;" class="projects__btn">Live Demo</a>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img">
+                        <img src="assets/Projects_img/academicnexa.jpg" alt="">
+                    </div>
+                    <div class="projects__details">
+                        <h3 class="projects__title">Student Portal (Academic Nexa) </h3>
+                        <p class="projects__description">A ERP system for both the teacher and student.Where teacher can
+                            manage all the students.</p>
+                        <p class="projects__framewor"> Framework : Spring Microservices,Reactjs,MYSQL Database.
+
+                        </p>
+                        <div class="projects__btn-container">
+                            <a href="https://main--academicnexa.netlify.app/studentdashboard" target="_blank"
+                                class="projects__btn">Live Demo</a>
+                            <a href="https://github.com/kunalsupekar/Student-Portal" target="_blank"
+                                class="projects__btn">
                                 <i class="fas fa-code"> </i> Source Code</a>
                         </div>
                     </div>
-                    </div>
-                    <div class="projects__item">
-                        <div class="projects__img">
-                            <img src="assets/Projects_img/nidhibank.jpg" alt="">
-                        </div>
-                        <div class="projects__details">
-                            <h3 class="projects__title">Banking System application</h3>
-                            <p class="projects__description">Making a banking application for online transaction ,using the spring boot rest API's.</p>
-                            <p class="projects__framework">Framework: Backend - Spring Boot,Frontend ReactjS,Database-MYSQL</p>
-                            
-
-                            <div class="projects__btn-container">
-                                <a href="https://kunalbank.netlify.app/home" target="_blank" class="projects__btn">Live Demo</a>
-                                <a href="https://github.com/kunalsupekar/Banking_application"  target="_blank" class="projects__btn">
-                                    <i class="fas fa-code"> </i> Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="projects__item">
-                        <div class="projects__img">
-                            <img src="assets/Projects_img/employee.jpg" alt="employee management system">
-                        </div>
-                        <div class="projects__details">
-                            <h3 class="projects__title">Employee Management System</h3>
-                            <p class="projects__description">Creating an Employee Management system project with Spring MVC and Oracle Database.</p>
-                            <p class="projects__framework">Framework: Spring MVC, Oracle Database.</p>
-                            <div class="projects__btn-container">
-                                <a href="#"  onclick="return false;" class="projects__btn">Live Demo</a>
-                                <a href="#" onclick="return false;" class="projects__btn">
-                                    <i class="fas fa-code"> </i> Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-
-
-                    
-                    <!-- Repeat similar structure for other projects -->
                 </div>
-            </section>
+                <div class="projects__item">
+                    <div class="projects__img">
+                        <img src="assets/Projects_img/nidhibank.jpg" alt="">
+                    </div>
+                    <div class="projects__details">
+                        <h3 class="projects__title">Banking System application</h3>
+                        <p class="projects__description">Making a banking application for online transaction ,using the
+                            spring boot rest API's.</p>
+                        <p class="projects__framework">Framework: Backend - Spring Boot,Frontend ReactjS,Database-MYSQL
+                        </p>
 
 
-            <section class="contact section" id="resume">
-                <h2 class="section-title">Resume  
-                    <a href="assets/Resume/Kunal_Resume_Btech.pdf" download class="nav__download-link">
-                        <i class="fas fa-download" style='margin-left: 15px;'></i> <!-- Assuming you have an icon library -->
-                        <!-- Or you can use text like "Download" -->
-                    </a>    
-                </h2>
+                        <div class="projects__btn-container">
+                            <a href="https://kunalbank.netlify.app/home" target="_blank" class="projects__btn">Live
+                                Demo</a>
+                            <a href="https://github.com/kunalsupekar/Banking_application" target="_blank"
+                                class="projects__btn">
+                                <i class="fas fa-code"> </i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="contact__container bd-grid">
-                    <!-- <form action="" class="contact__form">
+
+
+                <div class="projects__item">
+                    <div class="projects__img">
+                        <img src="assets/Projects_img/employee.jpg" alt="employee management system">
+                    </div>
+                    <div class="projects__details">
+                        <h3 class="projects__title">Employee Management System</h3>
+                        <p class="projects__description">Creating an Employee Management system project with Spring MVC
+                            and Oracle Database.</p>
+                        <p class="projects__framework">Framework: Spring MVC, Oracle Database.</p>
+                        <div class="projects__btn-container">
+                            <a href="#" onclick="return false;" class="projects__btn">Live Demo</a>
+                            <a href="#" onclick="return false;" class="projects__btn">
+                                <i class="fas fa-code"> </i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Repeat similar structure for other projects -->
+            </div>
+        </section>
+
+        <section class="contact section" id="resume">
+            <h2 class="section-title">Resume
+                <a href="assets/Resume/kunal-supekar.pdf" target="_blank" class="nav__link">
+                    <i class="fas fa-eye" style='margin-left: 15px;'></i>
+                </a>
+            </h2>
+            <div class="contact__container bd-grid">
+                <!-- <form action="" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
@@ -437,169 +490,167 @@
                     </form> -->
 
 
-                    
-      <article class="resume" data-page="resume">
 
-        <!-- <header>
+                <article class="resume" data-page="resume">
+
+                    <!-- <header>
           <h2 class="h2 article-title">Resume</h2>
         </header> -->
 
-        <section class="timeline">
+                    <section class="timeline">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+                            <h3 class="h3">Education</h3>
+                        </div>
 
-          <ol class="timeline-list">
+                        <ol class="timeline-list">
 
-            <li class="timeline-item">
+                            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">BACHELOR OF TECHNOLOGY IN ELECTRONICS & TELECOMMUNICATIONS</h4>
-                <p>MIT Academy of Engineering Alandi,Pune
-                </p>
-              <span>2021 — 2025</span>
-              <p class="timeline-text" style="margin-right: 150px;">
-                Currently : Third Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <br>
-                CGPA : 9.23
-            
-            </li>
+                                <h4 class="h4 timeline-item-title">BACHELOR OF TECHNOLOGY IN ELECTRONICS &
+                                    TELECOMMUNICATIONS</h4>
+                                <p>MIT Academy of Engineering Alandi,Pune
+                                </p>
+                                <span>2021 — 2025</span>
+                                <p class="timeline-text">
+                                    CGPA : 9.4
 
-            <li class="timeline-item">
+                            </li>
 
-              <h4 class="h4 timeline-item-title">SENIOR SECONDARY(XII),SCIENCE</h4>
-                <p>Bh Chate junior college,Pune</p>
-              <span>2019 — 2021</span>
+                            <li class="timeline-item">
 
-              <p class="timeline-text">
-                (MAHARASHTRA STATE BOARD)
-                <br>
-                Percentage: 94%
-              </p>
+                                <h4 class="h4 timeline-item-title">SENIOR SECONDARY(XII),SCIENCE</h4>
+                                <p>Bh Chate junior college,Pune</p>
+                                <span>2019 — 2021</span>
 
-            </li>
+                                <p class="timeline-text">
+                                    (MAHARASHTRA STATE BOARD)
+                                    <br>
+                                    Percentage: 94%
+                                </p>
 
-            <li class="timeline-item">
+                            </li>
 
-              <h4 class="h4 timeline-item-title">SECONDARY(X)</h4>
-                <p>Shri Mulika Devi Vidya Mandir,Parner
-                </p>
-              <span>2015 — 2019</span>
+                            <li class="timeline-item">
 
-              <p class="timeline-text">
-                (SSC Board)
-                <br>
-                Percentage: 91%               
-              </p>
+                                <h4 class="h4 timeline-item-title">SECONDARY(X)</h4>
+                                <p>Shri Mulika Devi Vidya Mandir,Parner
+                                </p>
+                                <span>2015 — 2019</span>
 
-            </li>
+                                <p class="timeline-text">
+                                    (SSC Board)
+                                    <br>
+                                    Percentage: 91%
+                                </p>
 
-          </ol>
+                            </li>
 
-          <div class="title-wrapper">
-            <h3 class="h3">Certification</h3>
-        </div>
-        <div class="work__container bd-grid">
-            <div class="work__item">
-                <a href="#" onclick="return false;" class="work__img">
-                    <img src="assets/Certificates/microsoft-certified-azure-fundamentals.png" alt="azure certificates">
-                </a>
-                <p class="certificate-name">Microsoft Azure AZ900</p>
-            </div>
-            <div class="work__item">
-                <a href="#" onclick="return false;" class="work__img">
-                    <img src="assets/Certificates/introduction-to-cybersecurity.png" alt="oracle-certificate">
-                </a>
-                <p class="certificate-name">Introduction to Cybersecurity</p>
-            </div>
-            <div class="work__item">
-                <a href="#" onclick="return false;" class="work__img">
-                    <img src="assets/Certificates/OCIF2023CA.jpg" alt="cisco">
-                </a>
-                <p class="certificate-name">Oracle Cloud Foundation Associate</p>
-            </div>
-        </div>
+                        </ol>
 
-        <div class="title-wrapper">
-            <h3 class="h3">Extra curricular</h3>
-        </div>        
-        <ol class="timeline-list">         
+                        <div class="title-wrapper">
+                            <h3 class="h3">Certification</h3>
+                        </div>
+                        <div class="work__container bd-grid">
+                            <div class="work__item">
+                                <a href="#" onclick="return false;" class="work__img">
+                                    <img src="assets/Certificates/microsoft-certified-azure-fundamentals.png"
+                                        alt="azure certificates">
+                                </a>
+                                <p class="certificate-name">Microsoft Azure AZ900</p>
+                            </div>
+                            <div class="work__item">
+                                <a href="#" onclick="return false;" class="work__img">
+                                    <img src="assets/Certificates/introduction-to-cybersecurity.png"
+                                        alt="oracle-certificate">
+                                </a>
+                                <p class="certificate-name">Introduction to Cybersecurity</p>
+                            </div>
+                            <div class="work__item">
+                                <a href="#" onclick="return false;" class="work__img">
+                                    <img src="assets/Certificates/OCIF2023CA.jpg" alt="cisco">
+                                </a>
+                                <p class="certificate-name">Oracle Cloud Foundation Associate</p>
+                            </div>
+                        </div>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">International Society of Automation (ISA)</h4>
-                <p>
-                    ISA Member
-                </p>
-              <span>2024 — 2025</span>
-            </li>
+                        <div class="title-wrapper">
+                            <h3 class="h3">Extra curricular</h3>
+                        </div>
+                        <ol class="timeline-list">
 
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">IEEE Student Branch Member</h4>
-                  <p>IEEE Bombay Section</p>
-                <span>2022 — 2025</span>  
-                <p class="timeline-text">
-                  Hosted the SMLET 2023 event at our college.
-              </li>
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">International Society of Automation (ISA)</h4>
+                                <p>
+                                    ISA Member
+                                </p>
+                                <span>2024 — 2025</span>
+                            </li>
 
-          </ol>
-        
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">IEEE Student Branch Member</h4>
+                                <p>IEEE Bombay Section</p>
+                                <span>2022 — 2025</span>
+                                <p class="timeline-text">
+                                    Hosted the SMLET 2023 event at our college.
+                            </li>
 
-          <!-- <div class="title-wrapper">
+                        </ol>
+
+
+                        <!-- <div class="title-wrapper">
             <h3 class="h3">Hobbies</h3>
         </div>
          -->
 
-        </section>
-                </div>
-            </section>
-           
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-            
-                <div class="contact__container bd-grid">
-                    <ul class="contact__list">
-                       
-                        <li><i class="fas fa-envelope"></i>  kunal.supekar@mitaoe.ac.in</li>
-                        <li><i class="fas fa-envelope"></i> kunalsupekar965@gmail.com</li>
-                        <!-- Add more contact details if needed -->
-                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kunal-supekar-6b81b2246/">Kunal Supekar</a></li>
-                        <li><i class="fas fa-phone"></i>  8767655747</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Pune,Maharashtra</li>
-                    </ul>
-                </div>
-            </section>
-            
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Kunal</p>
-            <div class="footer__social">
-                <a href="#"  onclick="return false;" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#"  onclick="return false;" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"  onclick="return false;" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                    </section>
             </div>
-            <p>8767655747</p>
-            <p>kunal.supekar@mitaoe.ac.in</p>
-            <p class="footer__copy">&#169; kunalsupekar portfolio . All rigths reserved</p>
-        </footer>
+        </section>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="contact__container bd-grid">
+                <ul class="contact__list">
+
+                    <li><i class="fas fa-envelope"></i> kunal.supekar@mitaoe.ac.in</li>
+                    <li><i class="fas fa-envelope"></i> kunalsupekar965@gmail.com</li>
+                    <!-- Add more contact details if needed -->
+                    <li><i class="fab fa-linkedin"></i> <a
+                            href="https://www.linkedin.com/in/kunal-supekar-6b81b2246/">Kunal Supekar</a></li>
+                    <li><i class="fas fa-phone"></i> 8767655747</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Pune,Maharashtra</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Kunal</p>
+        <div class="footer__social">
+            <a href="#" onclick="return false;" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" onclick="return false;" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" onclick="return false;" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>8767655747</p>
+        <p>kunal.supekar@mitaoe.ac.in</p>
+        <p class="footer__copy">&#169; kunalsupekar portfolio . All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
